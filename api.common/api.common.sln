@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74634572-9347-4700-8387-86C9943D9717}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattribute = .gitattribute
+		.gitignore = .gitignore
+		build.ps1 = build.ps1
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api.common", "gexa.api.common\api.common.csproj", "{69F95319-0734-48DF-90A9-43B5EE26630B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildHelper", "BuildHelper\BuildHelper.csproj", "{4881EF59-A508-471C-BB8E-F96211D7633A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69F95319-0734-48DF-90A9-43B5EE26630B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69F95319-0734-48DF-90A9-43B5EE26630B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69F95319-0734-48DF-90A9-43B5EE26630B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69F95319-0734-48DF-90A9-43B5EE26630B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4881EF59-A508-471C-BB8E-F96211D7633A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4881EF59-A508-471C-BB8E-F96211D7633A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4881EF59-A508-471C-BB8E-F96211D7633A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4881EF59-A508-471C-BB8E-F96211D7633A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,24 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+         ToolsVersion="14.0"
+         DefaultTargets ="Build">
+  <PropertyGroup>
+    <LibraryProjectOutputDirectory>$(OutDir)_PublishedLibraries</LibraryProjectOutputDirectory>
+    <NuGetToolPath>$(NuGetExePath)</NuGetToolPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PrepareForRunDependsOn>
+      $(PrepareForRunDependsOn);
+      _PackageLibrary;
+    </PrepareForRunDependsOn>
+  </PropertyGroup>
+
+  <Target Name="_PackageLibrary" Condition="'$(OutDir)' != '$(OutputPath)' And '$(NuGetToolPath)' != '' ">
+    <Message Text="Package class library for $(MSBuildProjectName)" />
+
+    <!-- Create the _PublishedLibraries folder-->
+    <MakeDir Directories="$(LibraryProjectOutputDirectory)" />
+
+    <Exec Command="&quot;$(NuGetToolPath)&quot; pack &quot;$(MSBuildProjectDirectory)\$(MSBuildProjectName).csproj&quot; -OutputDirectory &quot;$(LibraryProjectOutputDirectory)&quot; -Build -Properties Configuration=$(Configuration) -IncludeReferencedProjects" />
+  </Target>
+
+</Project>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>api.common</id>
+    <title>api.common</title>
+    <version>1.0.0.1</version>
+    <authors>Vikram Chirumamilla</authors>
+    <owners>Test Energy</owners>
+    <licenseUrl>http://testenergy.com</licenseUrl>
+    <projectUrl>http://testenergy.com</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Common library for test apis</description>
+	<tags>api common</tags>
+    <language>en-US</language>
+  </metadata>
+  <files>
+    <file src="bin\release\api.common.dll" target="lib\net40" />
+    <file src="bin\release\api.common.pdb" target="lib\net40" />
+  </files>
+</package>
